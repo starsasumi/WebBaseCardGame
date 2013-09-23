@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+div {
+	margin: 20px;
+}
+
+ul {
+	list-style-type: none;
+	/*    width: 500px;   */
+}
+
+h3 {
+	font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+li .card {
+	float: left;
+	margin: 0 15px 0 0;
+}
+
+li p {
+	font: 200 12px/1.5 Georgia, Times New Roman, serif;
+}
+
+li {
+	padding: 10px;
+	overflow: auto;
+	width: 200px;
+	float: left;
+}
+
+li:hover {
+	background: #eee;
+	cursor: pointer;
+}
+
+.card {
+	width: 80px;
+	height: 80px;
+}
+
+.card_pattern,.draw_two .card_pattern,.wild_draw_four .card_pattern {
+	font-size: 380%;
+	font-weight: bold;
+	top: 5px;
+}
+
+.card_logo {
+	display: none;
+}
+
+.card:hover {
+	z-index: auto;
+	top: 0px;
+	margin-right: 15px;
+	box-shadow: none;
+}
+
+#table_creater {
+	position: fixed;
+	bottom: 0px;
+	background-color: rgba(255, 255 ,255 ,0.6);
+	width: 100%;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	margin: 0px;
+	font-size: 120%;
+	font-weight: 100;
+}
+
+#table_creater .tableCreateForm{
+	margin-right: 20px;
+	float: right;
+}
+
+.tableCreateForm .button {
+	font-size: 100%;
+	color: white;
+	padding: 0px 5px;
+	background:#075698; /* default background for browsers without gradient support */
+	/* css3 */
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#2e88c4), to(#075698));
+	background:-moz-linear-gradient(#2e88c4, #075698);
+	background:-o-linear-gradient(#2e88c4, #075698);
+	background:linear-gradient(#2e88c4, #075698);
+	border: none;
+	border-radius: 10px;
+}
+
+.tableCreateForm #playerNum {
+	font-size: 100%;
+
+}

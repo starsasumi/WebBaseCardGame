@@ -1,0 +1,21 @@
+body {
+	background-color: #3B9B62;
+	background: -moz-radial-gradient(circle, #7ad29d, #3B9B62);
+	background: -webkit-radial-gradient(circle, #7ad29d, #3B9B62);
+	font-size: 16px;
+	/* font-family: menlo, "Courier New", sans-serif; */
+	font-family: "冬青黑体简体中文", "Microsoft Yahei", "微软雅黑", Tahoma, Arial, Helvetica,
+		STHeiti;
+	min-height: 640px;
+	min-width: 1024px;
+	overflow: hidden;
+}
+
+/*Webkit,Opera9.5+,Ie9+*/
+::selection {
+	background: rgba(255,255,255,0);
+}
+/*Mozilla Firefox*/
+::-moz-selection {
+	background: rgba(255,255,255,0);
+}

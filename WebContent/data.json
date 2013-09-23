@@ -1,0 +1,11 @@
+[{
+	"type" : "1",
+	"playerId" : "321",
+	"cardId" : "24"
+},  
+{
+	"type" : "3",
+	"cardId" : "24",
+	"color" : "2"
+}
+]  

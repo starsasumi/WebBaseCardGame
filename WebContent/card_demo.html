@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/basic.css" />
+<link rel="stylesheet" type="text/css" href="css/cards.css" />
+<link rel="stylesheet" type="text/css" href="css/table.css" />
+</head>
+<body>
+<button id='change_card'>Add Card</button>
+<p id='card_info'></p>
+<div class='cards'>
+</div>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#change_card").click(function(){
+		var id = parseInt(109 * Math.random());
+		$('#card_info').text('ID: ' + id);
+		
+		$.get('cards/all_cards.html', function(data) {
+			$('.cards').append($(data).filter('#card_' + id));
+			$('#card_info').text($('.card').data("color"));
+		});
+	});
+	
+	$('.cards').on('click','.card',function(){ 
+
+		var $change = $(this), pos = $change.position();
+		$change.css({top: pos.top, left: pos.left, position: 'absolute'});
+    
+		$change.animate({top:"50%",left:"50%"});
+	});
+	
+});
+</script>
+</body>
+</html>

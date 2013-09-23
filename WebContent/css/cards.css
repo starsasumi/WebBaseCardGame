@@ -1,0 +1,94 @@
+.card {
+	float: left;
+	width: 120px;
+	height: 160px;
+	border: 5px solid white;
+	border-radius: 18px;
+	margin: 10px -80px 10px 10px;
+	position: relative;
+	cursor: pointer;
+}
+.cards {
+	clear: left;
+	display: block;
+	padding-right: 80px;	/* 因为 .card{ merge-right: -80px} */
+}
+.red {
+	background-color: #e80000;
+}
+.yellow {
+	background-color: #f9e400;
+}
+.green {
+	background-color: #2bbc40;
+}
+.blue {
+	background-color: #4552ff;
+}
+.wild {
+	/* IE :( */
+	background-color: #232323;
+	/* Safari 5.1+, Chrome 10+ */ 
+	background: -webkit-linear-gradient(top, #e80000, #f9e400, #2bbc40, #4552ff);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #e80000, #f9e400%, #2bbc40, #4552ff);
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #e80000, #f9e400%, #2bbc40, #4552ff);
+}
+.card_pattern {
+	text-align: center;
+	color: white;
+	opacity: 0.85;
+	font-size: 700%;
+	font-weight: bold;
+	text-shadow: 0px 0px 4px black;
+	margin: auto;
+	float: none;
+	position: relative;
+	top: -15px;
+	-moz-transform: rotate(-6deg);  
+    -webkit-transform: rotate(-6deg);  
+    -o-transform: rotate(-6deg);  
+    -ms-transform: rotate(-6deg);  
+    transform: rotate(-6deg);  
+}
+.card_logo {
+	color: white;
+	font-weight: 300;
+	font-size: 1.3em;
+	text-shadow: 1px 1px 4px black;
+	position: relative;
+	left: 5px;
+	top:5px;
+}
+.draw_two .card_pattern, .wild_draw_four .card_pattern {
+	font-size: 600%;
+	top: -6px;
+}
+.highlighted {
+	box-shadow: 0px 0px 10px white;
+	top: -15px;
+}
+.card:hover {
+	z-index: 99;
+	top: -15px;
+	margin-right: -20px;
+	box-shadow: 0px 0px 20px black;
+}
+.card_cover {
+	background-color: #232323;
+}
+.card_cover .card_pattern {
+    padding: 33px 0px 0px 0px;
+	width: 100px;
+	height: 67px;
+	background-color: #E74100;
+	border-radius: 110px 50px;
+	font-size: 200%;
+	top: 8px;
+
+}
+.inactive {
+	-webkit-filter : brightness(0.7);
+	filter : brightness(0.7);
+}

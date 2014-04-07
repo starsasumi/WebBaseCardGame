@@ -2,6 +2,7 @@
 ===============
 
 A simple but fun card game developed on Java EE, HTML5, CSS3 and jQuery. A sample of Web-Base multiplayer game.
+
 This is a student project that I developed with other four classmate in the Production Practice Course. 
 
 We understand that we HAVE NOT authorized the copyright of the original card game.
